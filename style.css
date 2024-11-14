@@ -1,0 +1,107 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.greeting {
+  font-family: "Doto", sans-serif;;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30rem;
+  /* handle inline height */
+  line-height: 80%;
+  margin-bottom: 100px
+}
+
+img {
+  border-radius: 50%;
+}
+
+/* add background image to the greeting class */
+.greeting {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/program.png');
+}
+
+/* flex */
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.headshot{
+  margin-right: 50px;
+}
+.bio{
+  padding-top: 30px;
+  margin-left: 50px;
+  height:600px;
+}
+.title{
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+.mark{
+  background: linear-gradient(transparent 60%, #426ec7 50%);
+  margin-bottom:30px;
+}
+.items{
+  font-size: 20px;
+  margin-top:0px
+}
+.items > p{
+  margin-bottom: 10px;
+}
+.social{
+  margin-top: 30px;
+}
+
+.icon{
+  margin-bottom: 20px;
+}
+.fa-arrow-right{
+  margin-left: 10px;
+}
+.explain{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */ */
+  .header {
+    width: 700px;
+  }
+  .greeting{
+    font-size: 17rem;
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .header  {
+    width: 500px;
+  }
+  .greeting{
+    font-size: 12rem;
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .header  {
+    width: 300px;
+  }
+  .greeting{
+    font-size: 8rem;
+  }
+}
